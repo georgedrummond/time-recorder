@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+# Idea taken from http://stackoverflow.com/questions/161590/how-do-you-track-your-time
+
+require 'time'
+
+action = ARGV.join(' ')
+
+puts action
