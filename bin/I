@@ -6,4 +6,6 @@ require 'time'
 
 action = ARGV.join(' ')
 
-puts action
+timesheet = File.join Dir.home, 'timesheet.csv'
+
+File.open(timesheet, 'a') { |f| f.puts "#{Time.now.to_i}, I #{action}" }
