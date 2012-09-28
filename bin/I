@@ -8,4 +8,4 @@ action = ARGV.join(' ')
 
 timesheet = File.join Dir.home, 'timesheet.csv'
 
-File.open(timesheet, 'a') { |f| f.puts "#{Time.now.to_i}, I #{action}" }
+File.open(timesheet, 'a') { |f| f.puts "#{Time.now}, I #{action}" }
